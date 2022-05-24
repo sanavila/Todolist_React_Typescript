@@ -1,0 +1,31 @@
+name: Deploy project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy
+        uses: test-room-7/action-update-file@v1
+        with: 
+          branch: demo
+          file-path: docs/*/
+          commit-msg: deploy system
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          
