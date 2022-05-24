@@ -25,7 +25,7 @@ export const AddArea = ({ onEnter }: Props) => {
                 value={inputText}
                 onChange={e => setInputText(e.target.value)}
                 onKeyUp={handleKeyUp}
-            />
+            /> 
         </C.Container>
     );
 }
