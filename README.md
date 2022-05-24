@@ -1,6 +1,9 @@
 # Project Link 
 
-[click here](https://sanavila.github.io/Todolist-with-react-and-typescript/).
+# [Click here](https://sanavila.github.io/Todolist-with-react-and-typescript/)
+
+
+[![Deploy project](https://github.com/sanavila/Todolist-with-react-and-typescript/actions/workflows/build.yml/badge.svg)](https://github.com/sanavila/Todolist-with-react-and-typescript/actions/workflows/build.yml)
 
 # Getting Started with Create React App
 
